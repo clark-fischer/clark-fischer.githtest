@@ -1,94 +1,112 @@
 <!DOCTYPE html>
 <html>
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <link rel="stylesheet" type="text/css" href="styles.css" />
     <meta content="width=device-width, initial-scale=1" name="viewport" />
-  </head>
-  <body id="bdy">
+</head>
+
+<body id="bdy">
     <div class="logo-container">
-    <img class="logo" src="logos3.svg" alt="my logo">
-    <div class="tip">&#x219C; it's two fish! see it?</div>
-    </div>
-    <div class="cards_wrapper"> 
-    <div class="card" onmouseover="change_to('#1a61ac')" onmouseout="change_back()">
-      <div class="card-image"></div>
-      <div class="card-text">
-        <span class="topic" style="font-size: 16px;">Class of 2022</span>
-        <h2>Education</h2>
-        <p>I'm currently a senior at Riverhead High School. I'm also dual enrolled at SCCC, where I've tried to take a wide varity of classes.</p>
-      </div>
-      <div class="card-stats">
-        <div class="stat">
-          <div class="value">4<sup>.0</sup></div>
-          <div class="type">College GPA</div>
-        </div>
-        <div class="stat border">
-          <div class="value">1500</div>
-          <div class="type">SAT</div>
-        </div>
-        <div class="stat">
-          <div class="value"></div>
-          <div class="type">Over A <br>Dozen Awards</div>
-        </div>
-      </div>
-    </div>
-    <div class="card" onmouseover="change_to('#ff4d07')" onmouseout="change_back()">
-      <div class="card-image card2"></div>
-      <div class="card-text card2">
-        <span class="topic" style="font-size: 17px;">Experience </span>
-        <h2>Projects</h2>
-        <p>I've worked on a wide varity of projects, both personal and professional! Click here to see my GitHub!</p>
-      </div>
-      <div class="card-stats card2">
-        <div class="stat">
-          <div class="value" style="font-size: 17px;">Front-End</div>
-          <div class="type">click here</div>
-        </div>
-        <div class="stat border">
-          <div class="value" style="font-size: 17px;">Software</div>
-          <div class="type">click here</div>
-        </div>
-        <div class="stat">
-          <div class="value" style="font-size: 17px;">Tools</div>
-          <div class="type">click here</div>
-        </div>
-      </div>
+        <img class="logo" src="logos3.svg" alt="my logo">
+        <div class="tip">&#x219C; it's two fish! see it?</div>
+
     </div>
     
-    <div class="card" onmouseover="change_to('#00bd3f')" onmouseout="change_back()">
-        <div class="card-image card3"></div>
-        <div class="card-text card3">
-          <span class="topic" style="font-size: 15px;">Since June, 2020</span>
-          <h2>Employment</h2>
-          <p>Recently promoted: have been working in Data Analysis and Reporting for a few months now.</p>
+    <div class="about_me">
+      <p></p>
+      <h2 class="click">Look here, or the cards below, to learn more about me!</h2>
+      <p></p>
+    </div>
+
+    <div class="cards_wrapper">
+        <div class="card" onmouseover="change_to('#1a61ac')" onmouseout="change_back()">
+            <div class="card-image"></div>
+            <div class="card-text">
+                <span class="topic" style="font-size: 16px;">Class of 2022</span>
+                <h2>Education</h2>
+                <p>I'm currently a senior at Riverhead High School. I'm also dual enrolled at SCCC, where I've tried to take a wide varity of classes.</p>
+            </div>
+            <div class="card-stats">
+                <div class="stat">
+                    <div class="value">4<sup>.0</sup></div>
+                    <div class="type">College GPA</div>
+                </div>
+                <div class="stat border">
+                    <div class="value">1500</div>
+                    <div class="type">SAT</div>
+                </div>
+                <div class="stat">
+                    <div class="value"></div>
+                    <div class="type">Over A <br>Dozen Awards</div>
+                </div>
+            </div>
         </div>
-        <div class="card-stats card3">
-          <div class="stat">
-            <div class="value">SQL</div>
-
-          </div>
-          <div class="stat border">
-            <div class="value">Python</div>
-
-          </div>
-          <div class="stat">
-            <div class="value">WebDev</div>
-
-          </div>
+        <div class="card" onmouseover="change_to('#ff4d07')" onmouseout="change_back()">
+            <div class="card-image card2"></div>
+            <div class="card-text card2">
+                <span class="topic" style="font-size: 17px;">Experience </span>
+                <h2>Projects</h2>
+                <p>I've worked on a wide varity of projects, both personal and professional! Click here to see my GitHub!</p>
+            </div>
+            <div class="card-stats card2">
+                <div class="stat">
+                    <div class="value" style="font-size: 17px;">Front-End</div>
+                    <div class="type">click here</div>
+                </div>
+                <div class="stat border">
+                    <div class="value" style="font-size: 17px;">Software</div>
+                    <div class="type">click here</div>
+                </div>
+                <div class="stat">
+                    <div class="value" style="font-size: 17px;">Tools</div>
+                    <div class="type">click here</div>
+                </div>
+            </div>
         </div>
-      </div>
-      </div>
-      <script type="text/javascript">
+        <div class="card" onmouseover="change_to('#00bd3f')" onmouseout="change_back()">
+            <div class="card-image card3"></div>
+            <div class="card-text card3">
+                <span class="topic" style="font-size: 15px;">Since June, 2020</span>
+                <h2>Employment</h2>
+                <p>Recently promoted: have been working in Data Analysis and Reporting for a few months now.</p>
+            </div>
+            <div class="card-stats card3">
+                <div class="stat">
+                    <div class="value">SQL</div>
+                </div>
+                <div class="stat border">
+                    <div class="value">Python</div>
+                </div>
+                <div class="stat">
+                    <div class="value">WebDev</div>
+                </div>
+            </div>
+        </div>
+    </div>
 
-        function change_to(color) {
-          document.getElementById('bdy').style.background = color; 
-          document.getElementById('bdy').style.transition = 'all 1s';
-        }
-        function change_back() {
-          document.getElementById('bdy').style.background = '#F0EAD6'; 
-          document.getElementById('bdy').style.transition = 'all 1s';
-        }
-      </script>
-  </body>
+    
+
+    <script type="text/javascript">
+    function change_to(color) {
+        document.getElementById('bdy').style.background = color;
+        document.getElementById('bdy').style.transition = 'all 1s';
+    }
+
+    function change_back() {
+        document.getElementById('bdy').style.background = '#F0EAD6';
+        document.getElementById('bdy').style.transition = 'all 1s';
+    }
+    </script>
+    <footer>
+
+      <p>Created by Clark Fischer</p>
+      <p>clarkfischerriv@gmail.com</p>
+      <p>© Copyright 2021 - ∞ Clark Fischer</p>
+    </footer>
+</body>
+
+
+
 </html>
