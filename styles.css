@@ -1,8 +1,36 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Fredericka+the+Great&family=Lato&display=swap');
 
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.card-stats.card1 a:hover {
+    background: #007ebd;
+}
+
+.card-stats.card2 a:hover {
+    background: darkorange;
+}
+
+.card-stats.card3 a:hover {
+    background: #3fbd00;
+}
+
+.left-side {
+    border-bottom-left-radius: 16px;
+}
+
+.right-side {
+    border-bottom-right-radius: 16px;
+}
+
 html {
-  display: grid;
-  justify-items: center;
+    display: grid;
+    justify-items: center;
 }
 
 body {
@@ -14,26 +42,28 @@ body {
 
 footer {
 
-  font-family: "Lato";
-  color: gray;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  justify-items: center;
-  /*padding: 10px;*/
+    font-family: "Lato";
+    color: gray;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+    /*padding: 10px;*/
 }
 
 .about_me {
-  display: grid;
-  grid-template-columns: 1fr 3fr 1fr;
-  justify-items: center;
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    justify-items: center;
+    font-size: 3vw;
+    text-align: center;
 }
 
 .click {
-  /*border: 1px solid black;*/
-  font-family: "Bebas Neue";
-  padding: .8em;
-  background: white;
-  border-radius: 6px;
+    /*border: 1px solid black;*/
+    font-family: "Bebas Neue";
+    padding: .8em;
+    background: white;
+    border-radius: 6px;
 }
 
 
@@ -51,7 +81,7 @@ footer {
     color: black;
     font-family: "Fredericka the Great";
 
-    display: none ;
+    display: none;
     -webkit-transform: rotate(-15deg);
     -moz-transform: rotate(-15deg);
     filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
@@ -104,6 +134,10 @@ footer {
     .tip {
         display: block;
     }
+
+    .about_me {
+        font-size: 1.2vw;
+    }
 }
 
 @media (width: 1024px) {
@@ -111,6 +145,9 @@ footer {
         zoom: .9;
     }
 
+    .about_me {
+        font-size: 1.2vw;
+    }
 }
 
 @media (max-width: 1025) {}
@@ -223,7 +260,6 @@ footer {
     background: rgb(255, 77, 7);
 }
 
-
 .card-image.card3 {
     background: url("img3.png");
     background-size: cover;
@@ -240,4 +276,46 @@ footer {
 
 .card-stats.card3 {
     background: rgb(0, 189, 63);
+}
+
+.section {
+  height 100%
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  justify-content: center;
+  text-align: center;
+  height: 50vh;
+
+}
+
+li {
+    color: goldenrod;
+    font-family: "Fredericka the Great";
+    font-weight: bold;
+    font-size: 30px;
+    letter-spacing: 2px;
+    z-index: -2;
+    text-shadow: -1px -1px 0 #000;
+}
+
+
+.education {
+/*  border-radius: 16px;
+    width: 90%;
+    margin: 0px auto;*/
+    padding: 20px;
+    
+    text-align: center;
+    background: #007ebd;
+    color: white;
+    
+    
+    font-family: "Lato";
 }
