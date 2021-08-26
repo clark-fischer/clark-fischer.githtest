@@ -64,6 +64,7 @@ footer {
     padding: .8em;
     background: white;
     border-radius: 6px;
+    border: dashed;
 }
 
 
@@ -318,4 +319,13 @@ li {
     
     
     font-family: "Lato";
+}
+
+.about_me > p {
+    padding: .8em;
+    background: white;
+    border-radius: 6px; 
+    justify-content: center;
+  margin: auto;
+  
 }
