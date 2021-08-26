@@ -11,13 +11,6 @@
     <div class="logo-container">
         <img class="logo" src="logos3.svg" alt="my logo">
         <div class="tip">&#x219C; it's two fish! see it?</div>
-
-    </div>
-    
-    <div class="about_me">
-      <p></p>
-      <h2 class="click">Look here, or the cards below, to learn more about me!</h2>
-      <p></p>
     </div>
 
     <div class="cards_wrapper">
@@ -28,19 +21,25 @@
                 <h2>Education</h2>
                 <p>I'm currently a senior at Riverhead High School. I'm also dual enrolled at SCCC, where I've tried to take a wide varity of classes.</p>
             </div>
-            <div class="card-stats">
-                <div class="stat">
-                    <div class="value">4<sup>.0</sup></div>
-                    <div class="type">College GPA</div>
-                </div>
-                <div class="stat border">
-                    <div class="value">1500</div>
-                    <div class="type">SAT</div>
-                </div>
-                <div class="stat">
-                    <div class="value"></div>
-                    <div class="type">Over A <br>Dozen Awards</div>
-                </div>
+            <div class="card-stats card1">
+                <a class="left-side" href="#">
+                    <div class="stat">
+                        <div class="value">4<sup>.0</sup></div>
+                        <div class="type">College GPA</div>
+                    </div>
+                </a>
+                <a class="mid" href="#">
+                    <div class="stat border">
+                        <div class="value">1500</div>
+                        <div class="type">SAT</div>
+                    </div>
+                </a>
+                <a class="right-side" href="#">
+                    <div class="stat">
+                        <div class="value"></div>
+                        <div class="type">Over A <br>Dozen Awards</div>
+                    </div>
+                </a>
             </div>
         </div>
         <div class="card" onmouseover="change_to('#ff4d07')" onmouseout="change_back()">
@@ -51,18 +50,24 @@
                 <p>I've worked on a wide varity of projects, both personal and professional! Click here to see my GitHub!</p>
             </div>
             <div class="card-stats card2">
-                <div class="stat">
-                    <div class="value" style="font-size: 17px;">Front-End</div>
-                    <div class="type">click here</div>
-                </div>
-                <div class="stat border">
-                    <div class="value" style="font-size: 17px;">Software</div>
-                    <div class="type">click here</div>
-                </div>
-                <div class="stat">
-                    <div class="value" style="font-size: 17px;">Tools</div>
-                    <div class="type">click here</div>
-                </div>
+                <a class="left-side" href="#">
+                    <div class="stat">
+                        <div class="value" style="font-size: 17px;">Front-End</div>
+                        <div class="type">click here</div>
+                    </div>
+                </a>
+                <a class="mid" href="#">
+                    <div class="stat border">
+                        <div class="value" style="font-size: 20px;">Software</div>
+                        <div class="type">click here</div>
+                    </div>
+                </a>
+                <a class="right-side" href="#">
+                    <div class="stat">
+                        <div class="value" style="font-size: 17px;">Tools</div>
+                        <div class="type">click here</div>
+                    </div>
+                </a>
             </div>
         </div>
         <div class="card" onmouseover="change_to('#00bd3f')" onmouseout="change_back()">
@@ -73,21 +78,54 @@
                 <p>Recently promoted: have been working in Data Analysis and Reporting for a few months now.</p>
             </div>
             <div class="card-stats card3">
-                <div class="stat">
-                    <div class="value">SQL</div>
-                </div>
-                <div class="stat border">
-                    <div class="value">Python</div>
-                </div>
-                <div class="stat">
-                    <div class="value">WebDev</div>
-                </div>
+                <a class="left-side" href="#">
+                    <div class="stat">
+                        <div class="value">SQL</div>
+                    </div>
+                </a>
+                <a class="mid" href="#">
+                    <div class="stat border">
+                        <div class="value">Python</div>
+                    </div>
+                </a>
+                <a class="right-side" href="#">
+                    <div class="stat">
+                        <div class="value">WebDev</div>
+                    </div>
+                </a>
             </div>
         </div>
     </div>
+        <div class="about_me">
+        <p></p>
+        <h2 class="click">Wondering why I might be good for your organization? Scroll to find out!</h2>
 
-    
+        <p></p>
+    </div>
 
+    <h1 style="text-align: center; font-size: 60px; font-family: 'Fredericka the Great'; text-decoration: underline;">Education</h1>
+
+        <div class="education">
+        
+        <p>I believe that the best programmers should know a little about a lot which is why I diversify my studies greatly. While I'm still in high school (...and taking advantedge of that sweet sweet reduced tution...) my time is practically unlimited. I've had at least an introductory look at all of these topics, while maintaing straight A's. </p>
+        
+    </div>
+
+    <section>
+        <ul id="parallax">
+
+
+            <li>Economics</li>
+            <li>Law</li>
+            <li>Accounting</li>
+            <li>Calculus III</li>
+            <li>Statistics</li>
+            <li>Chinese</li>
+            <li>Programing</li>
+            <li>Writing</li>
+            <li style="font-size: 30px;">...all with a 4.0!</li>
+        </ul>
+    </section>
     <script type="text/javascript">
     function change_to(color) {
         document.getElementById('bdy').style.background = color;
@@ -98,15 +136,39 @@
         document.getElementById('bdy').style.background = '#F0EAD6';
         document.getElementById('bdy').style.transition = 'all 1s';
     }
-    </script>
-    <footer>
 
-      <p>Created by Clark Fischer</p>
-      <p>clarkfischerriv@gmail.com</p>
-      <p>© Copyright 2021 - ∞ Clark Fischer</p>
+    let parent = document.getElementById('parallax');
+    let children = parent.getElementsByTagName('li');
+
+    let randomCount = [];
+    for (let i = 0; i < children.length; i++) {
+        randomCount[i] = Math.random() + 1.6;
+    }
+
+    window.addEventListener('scroll', () => {
+
+        console.log(children[1].offsetLeft)
+
+        if (children[1].offsetLeft < 600) {
+            randomCount.forEach(function(val, i) { children[i].style.display = 'none'; });
+        } else if (children[1].offsetLeft > 600 && children[1].offsetLeft < 820) {
+            change_to('#1a61ac');
+            randomCount.forEach(function(val, i) { children[i].style.transition = 'all 1s'; });
+            randomCount.forEach(function(val, i) { children[i].style.display = 'block'; });
+            for (let i = 0; i < children.length; i++) {
+                children[i].style.transform = 'translate3d(0px, ' + ((window.pageYOffset - 800) * randomCount[i]) + 'px, 0px)';
+            }
+        } else {
+
+        }
+    }, false);
+    </script>
+
+    <footer>
+        <p>Created by Clark Fischer</p>
+        <p>clarkfischerriv@gmail.com</p>
+        <p>© Copyright 2021 - ∞ Clark Fischer</p>
     </footer>
 </body>
-
-
 
 </html>
