@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Mucha</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <section>
+      <img style="z-index: 1000;" src="first1.png" id="first">
+      <img style="z-index: 100;" src="first2_3.png" id="second">
+      <img style="z-index: 10;" src="first3_2.png" id="third">
+      <h2 style="z-index: 1000; font-family: 'Staatliches' ; " id="text">Alphonse Mucha</h2>
+    </section>
+    <br>
+    <p style="color: white;">Van Gogh, Monet, DaVinci: these artists are so well known, and their work so wide spread, that they have become almost synonomous with artistic talent. A painting by Van Gogh, for instance, is both easily identified, due to his unique style, and rooted deeply in the artist themselves. In fact, most famous sets of art are acompanied by equally famous artists. But Alphonse Mucha is one artist you may not have heard of, despite his extermly prolific body of work</p>
+    <script type="text/javascript">
+      let first = document.getElementById("first")
+      let second = document.getElementById("second")
+      let third = document.getElementById("third")
+      let text = document.getElementById("text")
+
+      window.addEventListener('scroll', function(){
+        var value = window.scrollY;
+
+        first.style.top = value * .25 + 'px'
+        second.style.top = value * .5 + 'px'
+        third.style.top = value * .75 + 'px'
+      })
+
+    </script>
+  </body>
+</html>
