@@ -1,0 +1,331 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Fredericka+the+Great&family=Lato&display=swap');
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.card-stats.card1 a:hover {
+    background: #007ebd;
+}
+
+.card-stats.card2 a:hover {
+    background: darkorange;
+}
+
+.card-stats.card3 a:hover {
+    background: #3fbd00;
+}
+
+.left-side {
+    border-bottom-left-radius: 16px;
+}
+
+.right-side {
+    border-bottom-right-radius: 16px;
+}
+
+html {
+    display: grid;
+    justify-items: center;
+}
+
+body {
+
+    background: #F0EAD6;
+    width: 100%;
+    height: 100%;
+}
+
+footer {
+
+    font-family: "Lato";
+    color: gray;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+    /*padding: 10px;*/
+}
+
+.about_me {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    justify-items: center;
+    font-size: 3vw;
+    text-align: center;
+}
+
+.click {
+    /*border: 1px solid black;*/
+    font-family: "Bebas Neue";
+    padding: .8em;
+    background: white;
+    border-radius: 6px;
+    border: dashed;
+}
+
+
+
+.logo-container {
+    position: relative;
+    text-align: center;
+
+}
+
+.tip {
+    position: absolute;
+    bottom: 16px;
+    right: 200px;
+    color: black;
+    font-family: "Fredericka the Great";
+
+    display: none;
+    -webkit-transform: rotate(-15deg);
+    -moz-transform: rotate(-15deg);
+    filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+}
+
+
+.card {
+    display: grid;
+    grid-template-rows: 13.125em 13.125em 5em;
+    grid-template-areas: "image""text""stats";
+
+    border-radius: 18px;
+    background: white;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.9);
+    font-family: "Lato";
+    text-align: center;
+
+    transition: 0.5s ease;
+    cursor: pointer;
+    margin: 50px 30px;
+}
+
+
+
+@media (min-height: 1080px) {
+    .card {
+        zoom: 1.4;
+    }
+}
+
+@media (max-height: 900px) {
+    .card {
+        zoom: .9;
+    }
+
+}
+
+@media (min-width: 1023px) {
+    .cards_wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+    }
+
+    .card {
+        grid-template-columns: 18.750em;
+    }
+
+    .tip {
+        display: block;
+    }
+
+    .about_me {
+        font-size: 1.2vw;
+    }
+}
+
+@media (width: 1024px) {
+    .card {
+        zoom: .9;
+    }
+
+    .about_me {
+        font-size: 1.2vw;
+    }
+}
+
+@media (max-width: 1025) {}
+
+
+
+.logo {
+
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+
+.card-image {
+    grid-area: image;
+    background: url("img1.png");
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    background-size: cover;
+}
+
+.card-text {
+    grid-area: text;
+    margin: 25px;
+}
+
+.card-text .topic {
+    color: rgb(26, 97, 172);
+    font-size: 13px;
+    font-family: "Bebas Neue";
+}
+
+.card-text p {
+    color: grey;
+    font-size: 15px;
+    font-weight: 300;
+
+}
+
+.card-text h2 {
+    margin-top: 0px;
+    font-size: 28px;
+    font-family: "Bebas Neue";
+}
+
+.card-stats {
+    grid-area: stats;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    background: rgb(26, 97, 172);
+    font-family: "Bebas Neue";
+    letter-spacing: 2px;
+}
+
+.card-stats .stat {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+}
+
+.card-stats .border {
+    border-left: 1px solid rgb(26, 41, 172);
+    border-right: 1px solid rgb(26, 41, 172);
+}
+
+.card-stats .value {
+    font-size: 22px;
+    font-weight: 500;
+}
+
+.card-stats .value sup {
+    font-size: 12px;
+}
+
+.card-stats .type {
+    font-size: 11px;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+.card:hover {
+    transform: scale(1.15);
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.6);
+}
+
+
+.card-image.card2 {
+    background: url("img2.png");
+    background-size: cover;
+}
+
+.card-text.card2 .topic {
+    color: rgb(255, 77, 7);
+}
+
+.card-stats.card2 .border {
+    border-left: 1px solid rgb(185, 67, 20);
+    border-right: 1px solid rgb(185, 67, 20);
+}
+
+.card-stats.card2 {
+    background: rgb(255, 77, 7);
+}
+
+.card-image.card3 {
+    background: url("img3.png");
+    background-size: cover;
+}
+
+.card-text.card3 .topic {
+    color: rgb(0, 189, 63);
+}
+
+.card-stats.card3 .border {
+    border-left: 1px solid rgb(14, 122, 50);
+    border-right: 1px solid rgb(14, 122, 50);
+}
+
+.card-stats.card3 {
+    background: rgb(0, 189, 63);
+}
+
+.section {
+  height 100%
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  justify-content: center;
+  text-align: center;
+  height: 50vh;
+
+}
+
+li {
+    color: goldenrod;
+    font-family: "Fredericka the Great";
+    font-weight: bold;
+    font-size: 30px;
+    letter-spacing: 2px;
+    z-index: -2;
+    text-shadow: -1px -1px 0 #000;
+}
+
+
+.education {
+/*  border-radius: 16px;
+    width: 90%;
+    margin: 0px auto;*/
+    padding: 20px;
+    
+    text-align: center;
+    background: #007ebd;
+    color: white;
+    
+    
+    font-family: "Lato";
+}
+
+.about_me > p {
+    padding: .8em;
+    background: white;
+    border-radius: 6px; 
+    justify-content: center;
+  margin: auto;
+  
+}
